@@ -1,0 +1,374 @@
+/* CSS reset */
+
+/* I've removed some of the resets
+   based on the nature of some features
+   on the this website */
+
+/* check here: https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+/*
+    1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+*/
+html,
+body {
+    height: 100%;
+    scroll-behavior: smooth;
+    /* background-color: bisque; */
+    /* overflow: hidden; */
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+*/
+body {
+    overflow-x: hidden;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    /* max-width: 100%; */
+}
+
+/*
+    7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/*
+    10. Remove list items styling
+*/
+ul {
+    list-style-type: none
+}
+
+/*
+    11. Create a root stacking context
+*/
+a {
+    font-family: var(--bold-font);
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+/* ********** */
+/* utility */
+:root {
+    --light-font: somar-light;
+    --medium-font: somar-medium;
+    --bold-font: somar-bold;
+
+    --margin-small: 1rem 1rem;
+    --margin-medium: 2rem 2rem;
+
+    --padding-small: 1rem 1rem;
+    --padding-medium: 1rem 2rem;
+    --padding-medium-2: 2rem 2rem;
+    --padding-large: 4rem 4rem;
+}
+
+.container {
+    padding: var(--padding-medium-2);
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    padding: var(--padding-medium);
+}
+
+.content-wrapper {
+    padding: 3rem 3rem;
+}
+
+.wide-card {
+    background-color: aliceblue;
+    padding: var(--padding-large);
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tag {
+    background-color: rgba(255, 127, 80, 0.374);
+    color: chocolate;
+    font-size: 1.6rem;
+    padding: .5rem .7rem;
+    font-weight: bold;
+    border-radius: 1.6rem;
+    min-width: 150px;
+    opacity: .8;
+    text-align: center;
+}
+
+.indentation-indicator {
+    width: 10px;
+    height: 10px;
+    margin-right: 20px;
+    background-color: #356DFF;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+#logo {
+    margin: 0.5rem 1rem 0.5rem 3rem;
+}
+
+#nav-bar .current-page {
+    opacity: 1;
+}
+
+footer .current-page {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--bold-font);
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+p {
+    font-family: var(--light-font);
+    font-size: 3rem;
+}
+
+/* ********** */
+/* fonts */
+@font-face {
+    font-family: somar-light;
+    src: url(../assets/fonts/Somar-Light.otf);
+}
+
+@font-face {
+    font-family: somar-medium;
+    src: url(../assets/fonts/Somar-Medium.otf);
+}
+
+@font-face {
+    font-family: somar-bold;
+    src: url(../assets/fonts/Somar-Bold.otf);
+}
+
+/* navigation bar */
+#nav-bar {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    column-gap: 4rem
+}
+
+.nav-items li {
+    border-radius: 5px;
+}
+
+.nav-items a {
+    background-color: white;
+    padding: var(--padding-small);
+    border-radius: 5px;
+    font-size: 2rem;
+    opacity: .5;
+}
+
+.nav-items a:hover {
+    background-color: aliceblue;
+    opacity: 1;
+}
+
+/* animated scroll mouse icon */
+.scroll-downs {
+    position: absolute;
+    top: 430px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 34px;
+    height: 55px;
+}
+
+.mousey {
+    width: 3px;
+    padding: 10px 13px;
+    height: 25px;
+    border: 2px solid gray;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+
+.scroller {
+    width: 3px;
+    height: 8px;
+    border-radius: 25%;
+    background-color: gray;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
+
+/* ********** */
+/* footer */
+footer {
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+}
+
+footer a {
+    font-family: var(--medium-font);
+}
+
+footer .flex-item {
+    height: 100%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-width: 350px;
+}
+
+footer .flex-item:nth-of-type(1) {
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+footer .flex-item:nth-of-type(3) {
+    align-items: flex-end;
+}
+
+footer .email {
+    font-size: 4rem;
+}
+
+footer .arrow {
+    margin-left: 1rem;
+}
+
+footer .socials a {
+    font-size: 4rem;
+    margin-right: 3rem;
+}
+
+.scroll-to-top {
+    background-color: rgb(53, 109, 255);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.scroll-to-top i {
+    line-height: 1.9;
+}
+
+/* ********** */
+/* copyright notice */
+.break-line {
+    border-top: 1px solid gray;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.copyright-notice-block {
+    direction: ltr;
+    text-align: center;
+    font-size: .5rem;
+}
+
+.copyright-notice-block .copyright-notice {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
