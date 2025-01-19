@@ -1,0 +1,245 @@
+/* ********** */
+/* who are we section */
+#who-are-we {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+}
+
+.who-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2.5rem;
+    text-align: right;
+}
+
+.who-content h1 {
+    font-size: 7rem;
+    max-width: 500px;
+    line-height: 5rem;
+}
+
+.who-content p {
+    max-width: 700px;
+    line-height: 1;
+}
+
+.who-content :is(p, h1) {
+    color: black;
+    word-wrap: break-word;
+    margin-bottom: 1rem;
+}
+
+.who-content .call-to-action a:nth-child(1) {
+    background-color: #356DFF;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    margin-left: 1rem;
+}
+
+.who-content .call-to-action a:nth-child(2) {
+    border: 1px solid #356DFF;
+    color: #356DFF;
+    border-radius: 50px;
+    font-size: 1.5rem;
+}
+
+.who-content .call-to-action a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    width: 170px;
+    color: white;
+}
+
+.who-content .call-to-action i {
+    /* centering the Font Awesome
+    call-to-actioin arrow horizontely */
+    vertical-align: 0;
+    margin-right: .5rem;
+}
+
+.who-image img {
+    position: absolute;
+    width: 1500px;
+    top: -350px;
+    left: -1050px;
+}
+
+/* ********** */
+/* our goal section */
+#our-goal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+}
+
+.our-goal-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2.5rem;
+    text-align: right;
+}
+
+.our-goal-content h1 {
+    font-size: 7rem;
+    max-width: 500px;
+    line-height: 5rem;
+}
+
+.our-goal-content p {
+    max-width: 700px;
+    line-height: 1;
+}
+
+.our-goal-content :is(p, h1) {
+    color: black;
+    word-wrap: break-word;
+    margin-bottom: 1rem;
+}
+
+.our-goal-image img {
+    width: 600px;
+}
+
+/* ********** */
+/* metrics sectioin */
+
+#metrics {
+    position: relative;
+}
+
+.metrics-display {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: 300px;
+    align-items: center;
+    text-align: center;
+}
+
+
+.metrics-display .metric-stats {
+    color: aquamarine;
+}
+
+.metrics-image img {
+    position: absolute;
+    top: -1000px;
+    left: 950px;
+    width: 2000px;
+    z-index: -1;
+    rotate: 180deg;
+}
+
+/* ********** */
+/* services cards section */
+#services-cards {
+    display: flex;
+    justify-content: space-around;
+    height: 800px;
+}
+
+.services-card {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.services-card-assets {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 400px;
+    min-height: 400px;
+    max-height: 400px;
+    background-color: gainsboro;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+}
+
+#services-cards .services-card-assets img {
+    width: 80px;
+}
+
+#services-cards .services-card-description {
+    max-width: 350px;
+    margin: 2rem 1rem;
+
+}
+
+#services-cards .services-card-description p {
+    font-size: 2.5rem;
+    text-align: right;
+    line-height: 1;
+    font-weight: 700;
+}
+
+/* ********** */
+/* our mission section */
+
+/* ********** */
+/* our goal section */
+#our-mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    position: relative;
+}
+
+.our-mission-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2.5rem;
+    text-align: right;
+}
+
+.our-mission-content h1 {
+    font-size: 7rem;
+    max-width: 500px;
+    line-height: 5rem;
+}
+
+.our-mission-content p {
+    max-width: 70vw;
+    line-height: 1;
+}
+
+.our-mission-content :is(p, h1) {
+    color: black;
+    word-wrap: break-word;
+    margin-bottom: 1rem;
+}
+
+.our-mission-image img {
+    width: 600px;
+}
+
+/* ********** */
+/* ISPs section */
+#providers .grid-items {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 4rem;
+}
+
+#providers .grid-items img {
+    margin: 0 auto;
+}
+
+/* ********** */
+/* footer section */

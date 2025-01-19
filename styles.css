@@ -1,0 +1,217 @@
+/* ********** */
+/* gradient canvas */
+#gradient-canvas {
+    z-index: -2;
+    height: 800px;
+    width: 200%;
+    position: absolute;
+    top: -350px;
+    right: -200px;
+    transform: rotate(11deg);
+    --gradient-color-1: #ef008f;
+    --gradient-color-2: #6ec3f4;
+    --gradient-color-3: #7038ff;
+    --gradient-color-4: #ffba27;
+}
+
+/* ********** */
+/* responsive header */
+.header {
+    display: none;
+}
+
+/* ********** */
+/* hero section */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 80vh;
+    position: relative;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: right;
+}
+
+.hero-content h1 {
+    font-size: 6rem;
+    max-width: 500px;
+    line-height: 5rem;
+}
+
+.hero-content p {
+    max-width: 700px;
+    line-height: 1;
+}
+
+.hero-content :is(p, h1) {
+    color: white;
+    word-wrap: break-word;
+    margin-bottom: 1rem;
+}
+
+.hero-content .call-to-action a:nth-child(1) {
+    background-color: black;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    margin-left: 1rem;
+}
+
+.hero-content .call-to-action a:nth-child(2) {
+    font-size: 1.8rem;
+}
+
+.hero-content .call-to-action a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    width: 170px;
+    color: white;
+}
+
+.hero-content .call-to-action i {
+    /* centering the Font Awesome
+    call-to-actioin arrow horizontely */
+    vertical-align: 0;
+    margin-right: .5rem;
+}
+
+/* ********** */
+/* our vision section */
+
+
+/* ********** */
+/* services section */
+#services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#services .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: var(--padding-small);
+}
+
+#services .background-image {
+    position: absolute;
+    left: -600px;
+    z-index: -1;
+    opacity: 0.1;
+    width: 3000px;
+}
+
+/* ********** */
+/* ISPs section */
+#providers .grid-items {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 4rem;
+}
+
+#providers .grid-items img {
+    margin: 0 auto;
+}
+
+
+/* ********** */
+/* blog section */
+#blog .wide-card {
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.cards-holder {
+    display: flex;
+}
+
+.blog-card {
+    background-color: #D2D2D5;
+    margin: 1rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+}
+
+.blog-image {
+    background-color: white;
+    height: 170px;
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+
+.title p {
+    background-color: #1A1C46;
+    width: 100px;
+    height: 30px;
+    border-radius: 1.5rem;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+
+.description {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bolder;
+    text-align: left;
+}
+
+#blog .arrow i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(53, 109, 255);
+    border-radius: 50%;
+    color: white;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.view-more {
+    border: 1px solid #356DFF;
+    font-size: 1.5rem;
+    border-radius: 2.5rem;
+    color: #356DFF;
+    padding: var(--padding-small);
+    width: 150px;
+}
+
+.view-more:hover {
+    background-color: #356DFF;
+    color: white;
+}
+
+/* ********** */
+/* company marker map section */
+#company-marker-map {
+    height: 700px;
+}
+
+#map {
+    height: 100%;
+    width: 900px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
